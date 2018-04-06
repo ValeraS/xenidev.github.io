@@ -2,6 +2,7 @@ lang: ru-RU
 encoding: utf-8
 
 author: "xenidev"
+image: /img/278-289.jpg
 
 exclude:
 - README.md
