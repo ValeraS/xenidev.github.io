@@ -1,2 +1,18 @@
+lang: ru-RU
+encoding: utf-8
+
+author: "xenidev"
+
+exclude:
+- README.md
+
+
+
 permalink: /notes/:year/:month/:day/:title
 markdown: kramdown
+kramdown:
+auto_ids: true
+
+gems:
+- jekyll-paginate
+- jekyll-feed
