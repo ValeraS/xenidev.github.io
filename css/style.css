@@ -95,9 +95,7 @@ pre.prettyprint { padding: 10px !important; margin: 40px; font-size: 12px;}
 /* Categories */
 
 
-.post-categories{
-	    margin-bottom: 10px;
-    margin-right: 10px;
-}
+.post-categories { margin-bottom: 10px;  
+                   margin-right: 10px; }
 
 
