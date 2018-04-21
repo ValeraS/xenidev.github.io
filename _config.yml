@@ -9,7 +9,7 @@ exclude:
 
 
 
-permalink: /notes/:year/:month/:day/:title
+permalink: /notes/:year/:month/:day/:categories/:title
 markdown: kramdown
 kramdown:
 auto_ids: true
