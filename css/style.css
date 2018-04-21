@@ -32,8 +32,23 @@ img.avatar { margin-bottom: 30px; }
 
 /* Notes */
 .notelist { width: 600px; margin: 0 auto; }
-ul.listnotes { margin: 0 auto; }
 ul.listnotes li {line-height: 30px; } 
+/* Notes */
+ul.listnotes {
+    margin: 0 auto;
+    margin: 0 auto;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 30px;
+    display: table;
+}
+
+
+
+
+
+
+
+
 
 /* Note */
 .note, .contact, .about, .error, .swatches { width: 85%; margin: 0 auto; line-height: 26px; }
