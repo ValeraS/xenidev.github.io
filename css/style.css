@@ -99,13 +99,7 @@ pre.prettyprint { padding: 10px !important; margin: 40px; font-size: 12px;}
                    margin-right: 10px; }
 
 
-small, .small {
-    font-size: 85%;
-}
-
-.label-tag {
-    background-color: #428bcb;
-}
+.label-tag { background-color: #428bcb; }
 
 
 
