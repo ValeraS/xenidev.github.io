@@ -83,7 +83,8 @@ pre.prettyprint { padding: 10px !important; margin: 40px; font-size: 12px;}
 	-webkit-border-radius: 50%; 
 	width: 35px; 
 	height: 35px; 
-	background: #4679BD; 
+	background: #4679BD; 	
+        color: #ffffff;
 	float: left;
 	text-align: center;
 	font-size: 24px;
