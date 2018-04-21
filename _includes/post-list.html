@@ -12,7 +12,7 @@
     {% assign categories = page.categories %}
   {% endif %}
   {% for category in categories %}
-  <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
+  <a class="label label-tag" href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
   {% unless forloop.last %}&nbsp;{% endunless %}
   {% endfor %}
 </div> 
