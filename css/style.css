@@ -118,6 +118,7 @@ pre.prettyprint { padding: 10px !important; margin: 40px; font-size: 12px;}
 
 /* Post-list */
 img. img-postlist {float: left!important;
+	vertical-align: middle;
 }
 	
 
