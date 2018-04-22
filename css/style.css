@@ -116,5 +116,9 @@ pre.prettyprint { padding: 10px !important; margin: 40px; font-size: 12px;}
 
 .label-tag { background-color: #428bcb; }
 
+/* Post-list */
+img. img-postlist {float: left!important;
+}
+	
 
 
