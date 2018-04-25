@@ -128,26 +128,15 @@ pre.prettyprint { padding: 10px !important; margin: 40px; font-size: 12px;}
     margin-bottom: 10px;
     margin-right: 10px
 }
-	
-/* POST-LIST */
-
 .notelist ul li h1.title a {
     color: #333333;
 }
+	
 
-.post-list-image {
-    width: 30%;
-    max-width: 100%;
-    min-height: 11rem;
-    background-size: cover;
-    background-position: 50% 50%;
-    float: left;
-    padding-right: 10px;
-   }
 
 /* SINGLE POST */
 
-.notes .img-postlist {
+.note .img-postlist {
     /* display: none; */
     width: 100%;
 }
