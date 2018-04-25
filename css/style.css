@@ -145,3 +145,10 @@ pre.prettyprint { padding: 10px !important; margin: 40px; font-size: 12px;}
     padding-right: 10px;
    }
 
+/* SINGLE POST */
+
+.notes .img-postlist {
+    /* display: none; */
+    width: 100%;
+}
+
