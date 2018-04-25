@@ -4,6 +4,11 @@
         <li>
                     <h1 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h1> 
            
+            
+                        
+  
+              {{ post.content }}
+            
              <!-- Categories-->
                    <div class="post-categories">
   {% if post %}
@@ -17,9 +22,6 @@
   {% endfor %}
 </div> 
                   <!-- /Categories-->
-                        
-  
-              {{ post.content }}
                         
                        
                         
