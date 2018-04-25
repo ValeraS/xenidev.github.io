@@ -5,5 +5,10 @@ Data for xenidev.github.io includes customization of Bootstrap 3.0. Blog and pag
 
 
 Images for post-list.html are from .img-postlist and for single post .note .img-postlist.
-![image-title-here](/img/000qc0ec.jpg){:class="img-responsive img-postlist"}
+![image-title-here](/img/hipster.jpg){:class="img-responsive img-postlist"}
+
+Categories and Tags (YAML)
+
+categories: ...
+
 
