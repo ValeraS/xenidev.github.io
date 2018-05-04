@@ -21,7 +21,4 @@ gems:
 - jekyll-paginate
 - jekyll-feed
 
-Excerpt
-<!--more-->
-Out-of-excerpt
-
+excerpt_separator: "<!--more-->"
