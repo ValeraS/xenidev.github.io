@@ -20,3 +20,8 @@ auto_ids: true
 gems:
 - jekyll-paginate
 - jekyll-feed
+
+Excerpt
+<!--more-->
+Out-of-excerpt
+
