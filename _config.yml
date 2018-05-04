@@ -16,10 +16,6 @@ auto_ids: true
 
 
 
----
-excerpt_separator: <!--more-->
----
-
 
 gems:
 - jekyll-paginate
