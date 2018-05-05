@@ -7,7 +7,7 @@
           
                   
             
-            <p class="nice-text">{{ post.content | strip_html | truncatewords: 45 }} <a href="{{ BASE_PATH }}{{ post.url }}">Читать дальше!</a></p>
+            {{ post.content | remove: '<h2>' | remove: '</h2>' | truncatewords: 50 }} <a href="{{ BASE_PATH }}{{ post.url }}">Read more!</a>
   
             
             
