@@ -5,7 +5,9 @@
                     <h1 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h1> 
            
           
-                   {{ post.content  |   remove: '<h2>' | remove: '</h2>' |  truncatewords: 40 }}     
+                  
+            
+            <p class="nice-text">{{ post.content | strip_html | truncatewords: 50 }} <a href="{{ BASE_PATH }}{{ post.url }}">Read more!</a></p>
   
             
             
