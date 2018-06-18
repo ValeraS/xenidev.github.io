@@ -2,10 +2,54 @@
 layout: default
 title: Notes
 notes: active
-
 ---
-	<div class="notes">
-
-     			{% include post-list.html %}
-			
-	</div> <!-- .notes -->
+<div class="notes">
+   <div class="container">
+      <div class="row">
+         <div class="container page-content">
+            <div class="my-3 p-3 bg-white rounded box-shadow">
+               {% for post in site.posts %}
+               <div class="media pt-3">
+                  <!-- Featured Image-->
+                  {% if post.image %}
+                  <img class="posts-list-image rounded" src="{{ post.image }}" alt="{{ post.title }}" />
+                  {% endif %}
+                  <!-- Post info -->               
+                  <strong class="lead text-gray-dark">
+                  <a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a>
+                  </strong>
+                  {% if post.categories.size > 0 %}             
+                  <small>   
+                  {% for category in post.categories %}
+                  <span class="label-category pull-right">{{category}}</span>
+                  {% endfor %}
+                  </small>
+                  {% endif %}
+                  <div class="text-muted">
+                     <small>
+                     <i class="fa fa-calendar"></i>
+                     <span>
+                     {{ post.date | date:"%d.%m.%Y"}}
+                     </span>
+                     </small>
+                  </div>
+                  <!-- Post info-tags  -->  
+                  {% if post.tags.size > 0 %} 
+                  <div class="margin10">
+                     <small>
+                     Tag{% if post.tags.size > 1 %}s{% endif %}:
+                     <span class="label-tag">{{ post.tags | sort | join: " | " }}</span>
+                     </small>
+                  </div>
+                  {% endif %}
+                  <!-- /.Post info -->
+                  <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">{{post.excerpt | strip_html | normalize_whitespace | escape }}
+                  </p>
+               </div>
+               {% endfor %}
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- .notes -->
