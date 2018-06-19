@@ -43,7 +43,7 @@ notes: active
                   </div>
                   {% endif %}
                   <!-- /.Post info -->
-                  <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">{{post.excerpt | strip_html | normalize_whitespace | escape }}
+                  <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">{{post.excerpt | strip_html | normalize_whitespace | escape | truncatewords: 40 }}
                   </p>
                </div>
                {% endfor %}
