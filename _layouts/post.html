@@ -13,23 +13,21 @@ notes: active
       </small>
       {% endif %}    
       <h1 class="text-gray-dark">{{ page.title }}</h1>
-      <!-- Date and Tags -->         
-           
-      
-      <div class="text-muted">
+      <!-- Date and Tags --> 
+                 <div class="text-muted">
                      <small>
                      <i class="fa fa-calendar"></i>
                      <span>
-                     {{ post.date | date:"%d.%m.%Y"}}
+                     {{ page.date | date:"%d.%m.%Y"}}
                      </span>
                      </small>
                   </div>
                   <!-- Post info-tags  -->  
-                  {% if post.tags.size > 0 %} 
+                  {% if page.tags.size > 0 %} 
                   <div class="margin10 text-muted">
                      <small>
-                     Tag{% if post.tags.size > 1 %}s{% endif %}:
-                     <span class="label-tag">{{ post.tags | sort | join: " | " }}</span>
+                     Tag{% if page.tags.size > 1 %}s{% endif %}:
+                     <span class="label-tag">{{ page.tags | sort | join: " | " }}</span>
                      </small>
                   </div>
                   {% endif %}
