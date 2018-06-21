@@ -7,47 +7,73 @@ notes: active
    <div class="container">
       <div class="row">
          <div class="container page-content">
-            <div class="my-3 p-3 bg-white rounded box-shadow">
-               {% for post in site.posts %}
-               <div class="media pt-3">
-                  <!-- Featured Image-->
-                  {% if post.image %}
-                  <img class="posts-list-image rounded" src="{{ post.image }}" alt="{{ post.title }}" />
-                  {% endif %}
-                  <!-- Post info -->               
-                  <strong class="lead text-gray-dark">
-                  <a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a>
-                  </strong>
-                  {% if post.categories.size > 0 %}             
-                  <small>   
+            
+            <h2>Блог</h2>
+           
+            
+            
+            <ul class="square-categories">
+                <span>Основные темы:</span>
+               
+               <small class="pull-right">
+   <li><span class="text-category">медтех</span><span class="badge-category-medtech"></span> </li>   
+                  <li><span class="text-category">видио</span><span class="badge-category-video"></span> </li>
+   <li><span class="text-category">разработка</span><span class="badge-category-razrabotka"></span> </li>
+               </small>
+</ul>
+            
+               <br>
+            
+            {% for post in site.posts %}
+<div class="media">
+<div class="media-left media-top">
+   {% if post.image %}
+   <img class="posts-list-image rounded" src="{{ post.image }}" alt="{{ post.title }}" /> 
+      
+   {% endif %}
+
+</div>
+<div class="media-body">
+   
+      {% if post.categories.size > 0 %}           
+                   
                   {% for category in post.categories %}
-                  <span class="label-category pull-right">{{category}}</span>
+   <span class="badge-category-razrabotka  pull-right">{{category}}</span>
                   {% endfor %}
-                  </small>
+                  
                   {% endif %}
-                  <div class="text-muted">
-                     <small>
-                     <i class="fa fa-calendar"></i>
-                     <span>
-                     {{ post.date | date:"%d.%m.%Y"}}
-                     </span>
-                     </small>
-                  </div>
-                  <!-- Post info-tags  -->  
+   
+   
+   
+   <h4 class="media-heading"><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h4>
+   
+
+   
+   
+   {{post.excerpt | strip_html | normalize_whitespace | escape | truncatewords: 40 }} 
+   
+     <!-- Post info-tags  -->  
+                      <div class="margin10 label-tag">  
                   {% if post.tags.size > 0 %} 
-                  <div class="margin10 text-muted">
-                     <small>
+                                  
                      Tag{% if post.tags.size > 1 %}s{% endif %}:
-                     <span class="label-tag">{{ post.tags | sort | join: " | " }}</span>
-                     </small>
-                  </div>
-                  {% endif %}
-                  <!-- /.Post info -->
-                  <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">{{post.excerpt | strip_html | normalize_whitespace | escape | truncatewords: 40 }}
+                     {{ post.tags | sort | join: " | " }}                   
                   </p>
-               </div>
-               {% endfor %}
-            </div>
+                  {% endif %}    
+                
+                  </div>
+</div>
+            
+            <hr>
+{% endfor %}
+            
+            
+            
+            
+            
+             
+   
+
          </div>
       </div>
    </div>
