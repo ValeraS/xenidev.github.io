@@ -4,76 +4,53 @@ title: Notes
 notes: active
 ---
 <div class="notes">
-   <div class="container">
-      <div class="row">
-         <div class="container page-content">
-            
-            <h2>Блог</h2>
-           
-            
-            
-            <ul class="square-categories">
-                <span>Основные темы:</span>
-               
-               <small class="pull-right">
-   <li><span class="text-category">медтех</span><span class="badge-category-medtech"></span> </li>   
-                  <li><span class="text-category">видио</span><span class="badge-category-video"></span> </li>
-   <li><span class="text-category">разработка</span><span class="badge-category-razrabotka"></span> </li>
-               </small>
-</ul>
-            
-               <br>
-            
-            {% for post in site.posts %}
-<div class="media">
-<div class="media-left media-top">
-   {% if post.image %}
-   <img class="posts-list-image rounded" src="{{ post.image }}" alt="{{ post.title }}" /> 
-      
-   {% endif %}
-
-</div>
-<div class="media-body">
-   
-      {% if post.categories.size > 0 %}           
-                   
-                  {% for category in post.categories %}
-   <span class="badge-category-razrabotka  pull-right">{{category}}</span>
-                  {% endfor %}
-                  
-                  {% endif %}
-   
-   
-   
-   <h4 class="media-heading"><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h4>
-   
-
-   
-   
-   {{post.excerpt | strip_html | normalize_whitespace | escape | truncatewords: 40 }} 
-   
-     <!-- Post info-tags  -->  
-                      <div class="margin10 label-tag">  
+<div class="container">
+   <div class="row">
+      <div class="container page-content">
+         <h2>Блог</h2>
+         <ul class="square-categories">
+            <span>Основные темы:</span>
+            <small class="pull-right">
+               <li><span class="text-category">медтех</span><span class="badge-category-medtech"></span> </li>
+               <li><span class="text-category">блог</span><span class="badge-category-video"></span> </li>
+               <li><span class="text-category">разработка</span><span class="badge-category-razrabotka"></span> </li>
+            </small>
+         </ul>
+         <br>
+         {% for post in site.posts %}
+         <div class="media">
+            <div class="media-left media-top">
+               {% if post.image %}
+               <img class="posts-list-image rounded" src="{{ post.image }}" alt="{{ post.title }}" />      
+               {% endif %}
+            </div>
+            <div class="media-body">
+               {% if post.categories.size > 0 %}        
+               {% for category in post.categories %}
+               {% if post.categories contains 'медтех' %}
+               <span class="badge-category-medtech pull-right"></span>		
+               {% endif %}
+               {% if post.categories contains 'видио' %}
+               <span class="badge-category-video pull-right"></span>	
+               {% endif %}
+               {% if post.categories contains 'разработка' %}
+               <span class="badge-category-razrabotka pull-right"></span>	
+               {% endif %}
+               {% endfor %}
+               {% endif %}
+               <h4 class="media-heading"><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h4>
+               {{post.excerpt | strip_html | normalize_whitespace | escape | truncatewords: 40 }} 
+               <!-- Post info-tags  -->  
+               <div class="margin10 label-tag">  
                   {% if post.tags.size > 0 %} 
-                                  
-                     Tag{% if post.tags.size > 1 %}s{% endif %}:
-                     {{ post.tags | sort | join: " | " }}                   
+                  Tag{% if post.tags.size > 1 %}s{% endif %}:
+                  {{ post.tags | sort | join: " | " }}                   
                   </p>
                   {% endif %}    
-                
-                  </div>
-</div>
-            
+               </div>
+            </div>
             <hr>
-{% endfor %}
-            
-            
-            
-            
-            
-             
-   
-
+            {% endfor %}
          </div>
       </div>
    </div>
