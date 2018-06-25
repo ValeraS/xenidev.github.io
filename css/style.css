@@ -531,4 +531,42 @@ ul.square-categories li span.text-category {
 	color: rgb(128, 128, 128);
     margin: 0 5px 0 15px;
 }
+
+
+
+
+
+/* Single Post */
+
+.metabox-k-d {
+  align-items: center;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  white-space: nowrap;
+
+}
+	
+
+.text-category {
+	text-transform: uppercase;
+	color: rgb(128, 128, 128);
+    margin: 0 5px 0 15px;
+	
+		font-size: 14px;
+font-weight: 500;
+}
+
+.metabox-d {
+    text-transform: uppercase;
+    color: rgb(128, 128, 128);
+   
+}
+
+.metabox-d .fa.fa-calendar {
+    margin: 0 5px 0 0px;
+}
 	
