@@ -4,55 +4,100 @@ notes: active
 ---
 <div class="notes">
    <div class="single note">
-      <!-- Title and Category -->
-      {% if page.categories.size > 0 %}             
-      <small>   
-      {% for category in page.categories %}
-      <span class="label-category pull-right">{{category}}</span>
-      {% endfor %}
-      </small>
-      {% endif %}    
-      <h1 class="text-gray-dark">{{ page.title }}</h1>
-      <!-- Date and Tags --> 
-                 <div class="text-muted">
-                     <small>
-                     <i class="fa fa-calendar"></i>
-                     <span>
-                     {{ page.date | date:"%d.%m.%Y"}}
-                     </span>
-                     </small>
-                  </div>
-                  <!-- Post info-tags  -->  
-                  {% if page.tags.size > 0 %} 
-                  <div class="margin10 text-muted">
-                     <small>
-                     Tag{% if page.tags.size > 1 %}s{% endif %}:
-                     <span class="label-tag">{{ page.tags | sort | join: " | " }}</span>
-                     </small>
-                  </div>
-                  {% endif %}
       
-      
-      
-      
-      
-      
-      
-      
-      <!-- Post content -->
-      <div class="notebody">
-         <!-- Featured Image-->
-         {% if page.image %}
-         <img class="featured-image" src="{{ page.image }}" alt="{{ page.title }}" />
-         {% endif %}
-         {{ content }}
+       <!-- Post info-tags  -->  
+      <div class="margin10 label-tag">  
+         {% if page.tags.size > 0 %} 
+         Tag{% if page.tags.size > 1 %}s{% endif %}:
+         {{ page.tags | sort | join: " | " }}                   
+         {% endif %}    
       </div>
-      <!-- Post info -->
-      <div class="noteinfo">
-         <!-- include some categories and tags maybe? -->
-      </div>
+   
+  <!-- Post category -->
+
+<div class="metabox-k-d">
+   
+   
+        
+
+   
+   
+   
+   
+   
+    <div class="metabox-d">
+    <i class="fa fa-calendar"></i>{{ page.date | date:"%d.%m.%Y"}}
+  </div>
+   
+  <div class="metabox-k">
+    {% if page.categories.size > 0 %} {% for category in page.categories %}
+    <div>
+      {% if page.categories contains 'медтех' %}
+      <span class="text-category">{{category}}</span><span class="badge-category-medtech"></span>
+    </div>
+
+    <div>
+      {% elsif page.categories contains 'блог' %}
+      <small class="pull-right"><span class="text-category">{{category}}</span><span class="badge-category-blog"></span></small>
+    </div>
+
+    <div>
+      {% elsif page.categories contains 'музыка' %}
+      <small class="pull-right"><span class="text-category">{{category}}</span><span class="badge-category-music"></span></small>
+    </div>
+
+    {% endif %}
+  </div>
+    </div>
+
+  {% endfor %} {% endif %}
+   
+
+</div>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
       <hr>
+      <h1>{{ page.title }}</h1>
+
+   <!-- Post content -->
+   <div class="notebody">
+      <!-- Featured Image-->
+      {% if page.image %}
+      <img class="featured-image" src="{{ page.image }}" alt="{{ page.title }}" />
+      {% endif %}
+      {{ content }}
    </div>
-   <!-- / .note .single -->
+   <!-- Post info -->
+   <div class="noteinfo">
+      <!-- include some categories and tags maybe? -->
+   </div>
+   <hr>
+</div>
+<!-- / .note .single -->
 </div>
 <!-- /.notes -->
