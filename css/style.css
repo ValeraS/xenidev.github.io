@@ -505,37 +505,6 @@ html, body{
 
 
 
-
-
-
-
-.square-categories {
-    list-style-type: none;
-    margin-bottom: 10px;
-    margin-top: 12px;
-padding-left: 0;
-}
-
-.square-categories li {
-    display: inline-block;
-    margin-left: 0;
-    white-space: nowrap;
-
-}
-
-
-
-
-ul.square-categories li span.text-category {
-	text-transform: uppercase;
-	color: rgb(128, 128, 128);
-    margin: 0 5px 0 15px;
-}
-
-
-
-
-
 /* Single Post */
 
 .metabox-k-d {
