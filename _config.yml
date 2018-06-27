@@ -1,24 +1,16 @@
 lang: ru-RU
 encoding: utf-8
-
 author: "xenidev"
-image: /img/278-289.jpg
-
 exclude:
 - README.md
-
-
-
 permalink: /notes/:year/:month/:day/:categories/:title
 markdown: kramdown
 kramdown:
 auto_ids: true
 
-
-
-
 gems:
 - jekyll-paginate
 - jekyll-feed
 
+categories: [медтех, разработка, видио]
 excerpt_separator: "<!--more-->"
