@@ -473,7 +473,7 @@ html, body{
 .badge-category-medtech {
     width: 10px;
     height: 10px;
-    margin-right: 5px;
+    margin-right: 15px;
     display: inline-block;
 	color: transparent;
 	    margin-left: 5px;
@@ -484,7 +484,7 @@ html, body{
 .badge-category-video {
     width: 10px;
     height: 10px;
-    margin-right: 5px;
+    margin-right: 15px;
     display: inline-block;
 	color: transparent;
 	    margin-left: 5px;
@@ -495,7 +495,7 @@ html, body{
 .badge-category-razrabotka {
     width: 10px;
     height: 10px;
-    margin-right: 5px;
+    margin-right: 15px;
     display: inline-block;
 	color: transparent;
 
