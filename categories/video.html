@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+<div class="notes">
+  <div class="container">
+    <div class="row">
+      <div class="container page-content">
+
+
+        {% for post in site.posts %}
+        {% if post.categories contains 'видео' %}
+        <div class="media">
+          <div class="media-left media-top">
+            {% if post.image %}
+            <img class="posts-list-image rounded" src="{{ post.image }}" alt="{{ post.title }}" /> {% endif %}
+          </div>
+          <div class="media-body">
+
+            <h4 class="media-heading"><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h4> {{post.excerpt | strip_html | normalize_whitespace | escape | truncatewords: 40 }}
+            <!-- Post info-tags  -->
+            <div class="margin10 label-tag">
+              {% if post.tags.size > 0 %} Tag{% if post.tags.size > 1 %}s{% endif %}: {{ post.tags | sort | join: " | " }}
+              </p>
+              {% endif %}
+            </div>
+          </div>
+          <hr>
+          {% endif %}
+          {% endfor %}
+
+        </div>
+      </div>
+    </div>
