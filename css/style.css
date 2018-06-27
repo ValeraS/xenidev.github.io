@@ -506,7 +506,11 @@ html, body{
 }
 
 
-
+/* Info Box */
+.row.info-box {
+    display: flex;
+    align-items: center;
+}
 
 
 /* Single Post */
