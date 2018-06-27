@@ -476,6 +476,7 @@ html, body{
     margin-right: 5px;
     display: inline-block;
 	color: transparent;
+	    margin-left: 5px;
     background-color: #d9534f;
 	
 }
@@ -486,6 +487,7 @@ html, body{
     margin-right: 5px;
     display: inline-block;
 	color: transparent;
+	    margin-left: 5px;
     background-color: #5bc0de;
 	
 }
@@ -496,6 +498,7 @@ html, body{
     margin-right: 5px;
     display: inline-block;
 	color: transparent;
+	    margin-left: 5px;
    
     background-color: #428bca;
 	
