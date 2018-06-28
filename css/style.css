@@ -510,6 +510,8 @@ html, body{
 .row.info-box {
     display: flex;
     align-items: center;
+	padding-bottom: 60px;
+  
 }
 
 .info-box h1 {
