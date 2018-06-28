@@ -512,6 +512,13 @@ html, body{
     align-items: center;
 }
 
+.info-box h2 {
+   display: inline;
+	margin-left: 5px;
+}
+
+
+
 
 /* Single Post */
 
