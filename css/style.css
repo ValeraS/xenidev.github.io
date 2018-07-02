@@ -291,6 +291,10 @@ iframe {
 
 
 /* Guides_xeni */
+.guide {
+    width: 100%;
+    
+}
 
 .guide h1 {
    display: inline;
@@ -317,12 +321,16 @@ iframe {
     margin-bottom: 10px;
     margin-top: 12px;
     padding-left: 0;
+	padding-top: 15px;
 }
 .square-categories li {
     display: inline-block;
     margin-left: 0;
     white-space: nowrap;
 }
+
+
+
 
 /* Code */
 
