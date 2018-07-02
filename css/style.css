@@ -290,6 +290,31 @@ iframe {
 }
 
 
+/* XENI */
+.guide h1 {
+   display: inline;
+	margin-left: 5px;
+}
+
+.guide i.fa.fa-github {
+    display: inline;
+	color: #181818;
+}
+
+.guide .title .fa-ul {
+     margin-left: auto;
+}
+
+
+.guide .title {
+    padding-bottom: 15px;
+}
+
+.guide {
+	width: 100%;
+	
+}
+
 /* Code */
 
 pre.prettyprint {
