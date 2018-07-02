@@ -290,7 +290,8 @@ iframe {
 }
 
 
-/* XENI */
+/* Guides_xeni */
+
 .guide h1 {
    display: inline;
 	margin-left: 5px;
@@ -313,6 +314,13 @@ iframe {
 .guide {
 	width: 100%;
 	
+}
+
+.square-categories {
+    list-style-type: none;
+    margin-bottom: 10px;
+    margin-top: 12px;
+    padding-left: 0;
 }
 
 /* Code */
@@ -480,20 +488,7 @@ span.label-category {
 
 
 
-/* I am trying to fix height problem */
 
-
-html, body{
-
-
-    min-width: 100%;
-    width: 100%;
-    max-width: 100%;
-
-    min-height: 100%;
-    height: 100%;
-    max-height: 100%;
-}
 
 
 /* Badge-category experiment */
