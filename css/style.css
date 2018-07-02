@@ -322,6 +322,11 @@ iframe {
     margin-top: 12px;
     padding-left: 0;
 }
+.square-categories li {
+    display: inline-block;
+    margin-left: 0;
+    white-space: nowrap;
+}
 
 /* Code */
 
