@@ -514,6 +514,8 @@ span.label-category {
 	color: transparent;
 	    margin-left: 5px;
     background-color: #d9534f;
+	border: 1px solid transparent;
+cursor: pointer;
 	
 }
 
@@ -525,6 +527,8 @@ span.label-category {
 	color: transparent;
 	    margin-left: 5px;
     background-color: #5bc0de;
+	border: 1px solid transparent;
+cursor: pointer;
 	
 }
 
@@ -538,6 +542,8 @@ span.label-category {
 	margin-left: 5px;
    
     background-color: #b799c8;
+	border: 1px solid transparent;
+cursor: pointer;
 	
 }
 
