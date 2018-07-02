@@ -299,13 +299,12 @@ iframe {
 /* Guides_xeni */
  
 
-.guide .title h1, h2 {\
+.guide .title h1, h2 {
 	display: inline;
-	margin-left: 5px;
-	
+	margin-left: 5px;	
 	color: #181818;
 }
-.guide h1 h2 {
+.guide h1, h2 {
    display: inline;
 	margin-left: 5px;
 }
