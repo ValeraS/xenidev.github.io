@@ -259,7 +259,6 @@ iframe {
 
 /*==========  Mobile First  ==========*/
 
-/* Custom, iPhone Retina */
 
 @media only screen and (min-width: 320px) {
   .guide {
@@ -267,7 +266,7 @@ iframe {
   }
 }
 
-/* Extra Small Devices, Phones */
+
 
 @media only screen and (min-width: 480px) {
   .guide {
@@ -285,7 +284,7 @@ iframe {
   }
 }
 
-/* Medium Devices, Desktops */
+
 
 @media only screen and (min-width: 992px) {
   .guide {
@@ -399,6 +398,7 @@ iframe {
 .guide h1, h2 {
   display: inline;
   margin-left: 5px;
+      color: #181818;
 }
 
 .guide i.fa.fa-github {
@@ -570,7 +570,7 @@ html, body {
   max-height: 100%;
 }
 
-/* Badge-category experiment */
+/* Badge-category */
 
 .badge-category-medtech {
   width: 10px;
@@ -581,7 +581,7 @@ html, body {
   background-color: #d9534f;
 }
 
-.badge-category-blog {
+.badge-category-vidio {
   width: 10px;
   height: 10px;
   margin-right: 5px;
@@ -590,7 +590,7 @@ html, body {
   background-color: #f0ad4e;
 }
 
-.badge-category-programming {
+.badge-category-razrabotka {
   width: 10px;
   height: 10px;
   margin-right: 5px;
@@ -646,8 +646,6 @@ html, body {
 
 /* Bootstrap Utilities */
 
-/* Custom, iPhone Retina */
-
 @media only screen and (min-width: 320px) {
   .media, .media-body {
     overflow: inherit;
@@ -655,7 +653,6 @@ html, body {
   }
 }
 
-/* Extra Small Devices, Phones */
 
 @media only screen and (min-width: 480px) {
   .media, .media-body {
@@ -664,7 +661,6 @@ html, body {
   }
 }
 
-/* Small Devices, Tablets */
 
 @media only screen and (min-width: 768px) {
   .media, .media-body {
@@ -673,7 +669,6 @@ html, body {
   }
 }
 
-/* Medium Devices, Desktops */
 
 @media only screen and (min-width: 992px) {
   .media, .media-body {
@@ -682,7 +677,6 @@ html, body {
   }
 }
 
-/* Large Devices, Wide Screens */
 
 @media only screen and (min-width: 1200px) {
   .media, .media-body {
