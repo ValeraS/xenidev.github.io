@@ -257,7 +257,6 @@ iframe {
 
 /* Guides */
 
-/*==========  Mobile First  ==========*/
 
 
 @media only screen and (min-width: 320px) {
@@ -292,10 +291,7 @@ iframe {
     margin: 0 auto 0px auto;
     line-height: 26px;
   }
-  .guide .title .square-categories span {
-    margin-right: 15px;
-    margin-left: 5px;
-}
+ 
   
 }
 
@@ -306,10 +302,7 @@ iframe {
     margin: 0 auto 0px auto;
     line-height: 26px;
   }
-  .guide .title .square-categories span {
-    margin-right: 15px;
-    margin-left: 5px;
-}
+  
 }
 
 .guide .title {
@@ -546,32 +539,18 @@ span.label-category {
   line-height: 1.25;
 }
 
-/* Single Post Image */
 
-.center-media {
-  margin: 0 auto;
-  display: block;
-}
-
-.page-media {
-  margin-bottom: 15px;
-  margin-top: 15px;
-}
-
-/* Single Post Featured Image */
-
-.featured-image {
-  float: left;
-  height: 8em;
-  width: auto;
-  margin: 8px 16px 8px 0;
-  border-radius: 3px;
-  box-shadow: 0 0 0 1px #ddd;
-}
 
 
 
 /* Badge-category */
+
+.guide .title .square-categories span {
+    margin-right: 15px;
+    margin-left: 5px;
+}
+
+
 
 .badge-category-medtech {
   width: 10px;
@@ -588,7 +567,7 @@ span.label-category {
   margin-right: 5px;
   display: inline-block;
   color: transparent;
-  background-color: #b5c5d6;
+  background-color: #ffe0f2 ;
 }
 
 .badge-category-razrabotka {
@@ -597,7 +576,7 @@ span.label-category {
   margin-right: 5px;
   display: inline-block;
   color: transparent;
-  background-color: #ffe0f2;
+  background-color: #b5c5d6 ; 
 }
 
 .square-categories {
@@ -643,9 +622,31 @@ span.label-category {
   margin: 0 5px 0 0px;
 }
 
-/*==========  Mobile First Method  ==========*/
+/* Single Post Image */
 
-/* Bootstrap Utilities */
+.center-media {
+  margin: 0 auto;
+  display: block;
+}
+
+.page-media {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+/* Single Post Featured Image */
+
+.featured-image {
+  float: left;
+  height: 8em;
+  width: auto;
+  margin: 8px 16px 8px 0;
+  border-radius: 3px;
+  box-shadow: 0 0 0 1px #ddd;
+}
+
+/*==========  Bootstrap Utilities  ==========*/
+
 
 @media only screen and (min-width: 320px) {
   .media, .media-body {
