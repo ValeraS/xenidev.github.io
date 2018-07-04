@@ -4,87 +4,61 @@ title: Notes
 notes: active
 ---
   <div class="guide">
-	   <ul class="square-categories pull-right">
 
-      <li><a href="/notes/medtech">медтех<span class="badge-category-medtech"></span></a> </li>
-      <li><a href="/notes/razrabotka.html">разработка<span class="badge-category-razrabotka"></span> </a> </li>
-      <li><a href="/notes/video.html">видио<span class="badge-category-video"></a>  </li>
-	
-    </ul>
-	  
-	  
   <div class="title">
+	  
+<ul class="square-categories pull-right">
+    <li><a href="/notes/medtech">медтех<span class="badge-category-medtech"></span></a> </li>
+    <li><a href="/notes/razrabotka.html">разработка<span class="badge-category-razrabotka"></span> </a> </li>
+    <li><a href="/notes/video.html">видио<span class="badge-category-video"></a> </li>
+  </ul>
+	  
+	  
+	  
     <ul class="fa-ul">
-      <li><i class="fa fa-github" style="font-size:48px;"></i><h2>GitBlog</h2></li>
-      
+      <li><i class="fa fa-github" style="font-size:48px;"></i>
+        <h2>GitBlog</h2></li>
+
     </ul>
     <p>GitHub как блоговая платформа.</p>
 
-   
+
   </div>
 
 </div>
 <!-- /.guide -->
 
-
-
-
 <div class="notes">
-<div class="container">
-   <div class="row">
-	   
-	   
-	       
+  <div class="container">
+    <div class="row">
 
-      
-	   
-	   
-	   
-	   
-	   
-	   
-	   
       <div class="container page-content">
-         
-         
-                   <!-- Posts-list
-  ================================================== --> 
-         {% for post in site.posts %}
-         <div class="media">
-            <div class="media-left media-top">
-               {% if post.image %}
-               <img class="posts-list-image rounded" src="{{ post.image }}" alt="{{ post.title }}" />      
-               {% endif %}
+
+
+        <!-- Posts-list
+  ================================================== -->
+        {% for post in site.posts %}
+        <div class="media">
+          <div class="media-left media-top">
+            {% if post.image %}
+            <img class="posts-list-image rounded" src="{{ post.image }}" alt="{{ post.title }}" /> {% endif %}
+          </div>
+          <div class="media-body">
+            {% if post.categories.size > 0 %} {% for category in post.categories %} {% if post.categories contains 'медтех' %}
+            <a href="/notes/categories/medtech.html"><span class="badge-category-medtech pull-right"></span> </a> {% endif %} {% if post.categories contains 'видио' %}
+            <a href="/notes/categories/video.html"><span class="badge-category-video pull-right"></span> </a> {% endif %} {% if post.categories contains 'разработка' %}
+            <a href="/notes/categories/razrabotka.html"><span class="badge-category-razrabotka pull-right"></span> </a> {% endif %} {% endfor %} {% endif %}
+            <h4 class="media-heading"><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h4> {{post.excerpt | strip_html | normalize_whitespace | escape | truncatewords: 40 }}
+            <!-- Post info-tags  -->
+            <div class="margin10 label-tag">
+              {% if post.tags.size > 0 %} Tag{% if post.tags.size > 1 %}s{% endif %}: {{ post.tags | sort | join: " | " }}
+              </p>
+              {% endif %}
             </div>
-            <div class="media-body">
-               {% if post.categories.size > 0 %}        
-               {% for category in post.categories %}
-               {% if post.categories contains 'медтех' %}
-               <a href="/notes/categories/medtech.html"><span class="badge-category-medtech pull-right"></span> </a> 
-               {% endif %}
-               {% if post.categories contains 'видио' %}
-               <a href="/notes/categories/video.html"><span class="badge-category-video pull-right"></span> </a> 
-               {% endif %}
-               {% if post.categories contains 'разработка' %}
-              <a href="/notes/categories/razrabotka.html"><span class="badge-category-razrabotka pull-right"></span> </a> 	
-               {% endif %}
-               {% endfor %}
-               {% endif %}
-               <h4 class="media-heading"><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h4>
-               {{post.excerpt | strip_html | normalize_whitespace | escape | truncatewords: 40 }} 
-               <!-- Post info-tags  -->  
-               <div class="margin10 label-tag">  
-                  {% if post.tags.size > 0 %} 
-                  Tag{% if post.tags.size > 1 %}s{% endif %}:
-                  {{ post.tags | sort | join: " | " }}                   
-                  </p>
-                  {% endif %}    
-               </div>
-            </div>
-            <hr>
-            {% endfor %}
-         </div>
+          </div>
+          <hr> {% endfor %}
+        </div>
       </div>
-   </div>
-</div>
-<!-- .notes -->
+    </div>
+  </div>
+  <!-- .notes -->
