@@ -559,6 +559,8 @@ span.label-category {
   display: inline-block;
   color: transparent;
   background-color: #e9a4a4;
+  border: 1px solid transparent;
+cursor: pointer;
 }
 
 .badge-category-video {
@@ -568,6 +570,8 @@ span.label-category {
   display: inline-block;
   color: transparent;
   background-color: #ffe0f2 ;
+  border: 1px solid transparent;
+cursor: pointer;
 }
 
 .badge-category-razrabotka {
@@ -577,6 +581,8 @@ span.label-category {
   display: inline-block;
   color: transparent;
   background-color: #b5c5d6 ; 
+  border: 1px solid transparent;
+cursor: pointer;
 }
 
 .square-categories {
