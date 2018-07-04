@@ -274,7 +274,7 @@ iframe {
   }
 }
 
-/* Small Devices, Tablets */
+
 
 @media only screen and (min-width: 768px) {
   .guide {
@@ -292,9 +292,13 @@ iframe {
     margin: 0 auto 0px auto;
     line-height: 26px;
   }
+  .guide .title .square-categories span {
+    margin-right: 15px;
+    margin-left: 5px;
+}
+  
 }
 
-/* Large Devices, Wide Screens */
 
 @media only screen and (min-width: 1200px) {
   .guide {
@@ -302,6 +306,10 @@ iframe {
     margin: 0 auto 0px auto;
     line-height: 26px;
   }
+  .guide .title .square-categories span {
+    margin-right: 15px;
+    margin-left: 5px;
+}
 }
 
 .guide .title {
