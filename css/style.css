@@ -499,6 +499,10 @@ a.en {
 }
 
 /* POSTS-LIST XENI */
+.container.page-content {
+    width: 85%;
+    margin: 0 auto;
+}
 
 span.label-category {
   color: rgb(255, 255, 255);
@@ -514,7 +518,6 @@ span.label-category {
   border-radius: 5px;
 }
 
-/** Streamline Featured Image  **/
 
 .posts-list-image {
   float: left;
@@ -524,7 +527,6 @@ span.label-category {
   box-shadow: 0 0 0 1px #ddd;
 }
 
-/** Tags **/
 
 .label-tag {
   color: rgb(128, 128, 128);
