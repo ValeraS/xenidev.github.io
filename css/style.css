@@ -550,8 +550,6 @@ span.label-category {
     margin-left: 5px;
 }
 
-
-
 .badge-category-medtech {
   width: 10px;
   height: 10px;
@@ -600,6 +598,19 @@ cursor: pointer;
 
 /* Single Post */
 
+.notebody>p {
+    line-height: 30px;
+    color: #424242;
+}
+.post-article-title>h1 {
+    font-family: Google Sans;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #424242;
+    margin-bottom: 24px;
+    margin-top: -8px;
+}
 .metabox-k-d {
   align-items: center;
   display: -ms-flexbox;
@@ -624,9 +635,36 @@ cursor: pointer;
   color: rgb(128, 128, 128);
 }
 
+
+.metabox-k-single {
+    display: inline-block;
+    float: right;
+    width: 100%;
+    margin-bottom: 30px;
+  font-weight: normal;
+ 
+    font-family: "Google Sans";
+  text-transform: uppercase;
+    color: rgb(128, 128, 128);
+}
+
+*
+
 .metabox-d .fa.fa-calendar {
   margin: 0 5px 0 0px;
 }
+
+
+.featured-image-single{
+    
+    height: auto;
+    width: 100%;
+    
+  margin: 8px 16px 8px 0;
+  border-radius: 3px;
+  box-shadow: 0 0 0 1px #ddd;
+}
+
 
 /* Single Post Image */
 
