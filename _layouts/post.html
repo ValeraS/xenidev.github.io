@@ -3,6 +3,7 @@ layout: default
 notes: active
 ---
 <div class="notes">
+         <div class="single note">
 
       <div class="topbar-single-post">
          <div class="post-article-title">
@@ -49,7 +50,7 @@ notes: active
    <!-- Post info-tags  -->
    <div class="margin10 label-tag">
       {% if page.tags.size > 0 %} Tag{% if page.tags.size > 1 %}s{% endif %}: {{ page.tags | sort | join: " | " }} {% endif %}
-
+      </div>
    <!-- / .note .single -->
 </div>
 <!-- /.notes -->
