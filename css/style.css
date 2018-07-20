@@ -492,10 +492,17 @@ a.en {
 }
 
 /* POSTS-LIST XENI */
-.container.page-content {
-    width: 85%;
-    margin: 0 auto;
+
+.media-heading a {
+     font: normal normal 500 normal 24px / 32px "Google Sans";
+    color: #424242;
+    margin-bottom: 24px;
+  
+    box-sizing: border-box;
+  text-decoration: none;
+ 
 }
+
 
 span.label-category {
   color: rgb(255, 255, 255);
