@@ -52,9 +52,9 @@ notes: active
           </div>
           <div class="media-body">
             {% if post.categories.size > 0 %} {% for category in post.categories %} {% if post.categories contains 'медтех' %}
-            <a href="/notes/categories/medtech.html"><span class="badge-category-medtech pull-right"></span> </a> {% endif %} {% if post.categories contains 'видио' %}
-            <a href="/notes/categories/video.html"><span class="badge-category-video pull-right"></span> </a> {% endif %} {% if post.categories contains 'разработка' %}
-            <a href="/notes/categories/razrabotka.html"><span class="badge-category-razrabotka pull-right"></span> </a> {% endif %} {% endfor %} {% endif %}
+            <a href="/notes/medtech.html"><span class="badge-category-medtech pull-right"></span> </a> {% endif %} {% if post.categories contains 'видио' %}
+            <a href="/notes/video.html"><span class="badge-category-video pull-right"></span> </a> {% endif %} {% if post.categories contains 'разработка' %}
+            <a href="/notes/razrabotka.html"><span class="badge-category-razrabotka pull-right"></span> </a> {% endif %} {% endfor %} {% endif %}
             <h4 class="media-heading"><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h4> {{post.excerpt | strip_html | normalize_whitespace | escape | truncatewords: 20 }}
             <!-- Post info-tags  -->
             <div class="margin10 label-tag">
