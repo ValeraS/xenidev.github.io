@@ -37,8 +37,8 @@ layout: default
         {% for post in site.posts %} {% if post.categories contains 'медтех' %}
         <div class="media">
           <div class="media-left media-top">
-            {% if post.image %}
-            <img class="posts-list-image rounded" src="{{ post.image }}" alt="{{ post.title }}" /> {% endif %}
+            {% if post.thumbnail %}
+            <img class="posts-list-image rounded" src="{{ post.thumbnail }}" alt="{{ post.title }}" /> {% endif %}
           </div>
           <div class="media-body">
 
