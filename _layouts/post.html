@@ -5,58 +5,29 @@ notes: active
 <div class="notes">
    <div class="single note">
       
-       <!-- Post info-tags  -->  
-      <div class="margin10 label-tag">  
-         {% if page.tags.size > 0 %} 
-         Tag{% if page.tags.size > 1 %}s{% endif %}:
-         {{ page.tags | sort | join: " | " }}                   
-         {% endif %}    
+         <div class="metabox-k-single">
+      {% if page.categories.size > 0 %} {% for category in page.categories %}
+      <div>
+        {% if page.categories contains 'медтех' %}
+          <p> <small class="pull-right">{{category}}</p><span class="badge-category-medtech"></span></small>
       </div>
-   
-  <!-- Post category -->
 
-<div class="metabox-k-d">
-   
-   
-        
+      <div>
+        {% elsif page.categories contains 'блог' %}
+          <p><small class="pull-right">{{category}}</p><span class="badge-category-blog"></span></small>
+      </div>
 
-   
-   
-   
-   
-   
-    <div class="metabox-d">
-    <i class="fa fa-calendar"></i>{{ page.date | date:"%d.%m.%Y"}}
+      <div>
+        {% elsif page.categories contains 'музыка' %}
+         <p><small class="pull-right">{{category}}</p><span class="badge-category-music"></span></small>
+      </div>
+
+      {% endif %}
+    </div>
   </div>
-   
-  <div class="metabox-k">
-    {% if page.categories.size > 0 %} {% for category in page.categories %}
-    <div>
-      {% if page.categories contains 'медтех' %}
-      <span class="text-category">{{category}}</span><span class="badge-category-medtech"></span>
-    </div>
-
-    <div>
-      {% elsif page.categories contains 'блог' %}
-      <small class="pull-right"><span class="text-category">{{category}}</span><span class="badge-category-blog"></span></small>
-    </div>
-
-    <div>
-      {% elsif page.categories contains 'музыка' %}
-      <small class="pull-right"><span class="text-category">{{category}}</span><span class="badge-category-music"></span></small>
-    </div>
-
-    {% endif %}
-  </div>
-    </div>
 
   {% endfor %} {% endif %}
-   
-
 </div>
-   
-   
-   
    
    
    
