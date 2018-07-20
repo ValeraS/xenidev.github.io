@@ -622,7 +622,7 @@ cursor: pointer;
     line-height: 30px;
     color: #424242;
 }
-.post-article-title>h1 {
+.single-post-title {
     font-family: Google Sans;
     font-weight: 500;
     font-size: 24px;
