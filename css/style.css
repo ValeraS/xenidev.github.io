@@ -492,6 +492,19 @@ a.en {
 }
 
 /* POSTS-LIST XENI */
+.welcome_bar {
+    margin-bottom: 45px;
+      font-family: "Google Sans";
+}
+
+h1.intro {
+    color: #424242;
+    font: normal normal 400 normal 36px / 44px "Google Sans";
+  float: left;
+  display:block;
+   margin: 0 0 0 0;
+}
+
 
 .media-heading a {
      font: normal normal 500 normal 24px / 32px "Google Sans";
