@@ -4,6 +4,12 @@ notes: active
 ---
 <div class="notes">
    <div class="single note">
+  
+      <div class="topbar-single-post">
+        
+  <div class="post-article-title">
+    <h1>{{ page.title }}</h1>
+  </div>
       
          <div class="metabox-k-single">
       {% if page.categories.size > 0 %} {% for category in page.categories %}
@@ -29,16 +35,13 @@ notes: active
 
   {% endfor %} {% endif %}
 </div>
-   
+</div>
 
 
 <!-- Post content -->
 
 <div class="notebody">
-  
-  <div class="post-article-title">
-    <h1>{{ page.title }}</h1>
-  </div>
+
   <!-- Featured Image-->
   {% if page.image %}
   <img class="featured-image-single" src="{{ page.image }}" alt="{{ page.title }}" /> {% endif %} {{ content }}
