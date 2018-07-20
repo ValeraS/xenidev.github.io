@@ -16,6 +16,7 @@ notes: active
         {% elsif page.categories contains 'разработка' %}
           <p><small class="pull-right">{{category}}</p><span class="badge-category-razrabotka"></span></small>
       </div>
+   
 
       <div>
         {% elsif page.categories contains 'видио' %}
@@ -29,46 +30,46 @@ notes: active
   {% endfor %} {% endif %}
 </div>
    
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-      <hr>
-      <h1>{{ page.title }}</h1>
 
-   <!-- Post content -->
-   <div class="notebody">
-      <!-- Featured Image-->
-      {% if page.image %}
-      <img class="featured-image" src="{{ page.image }}" alt="{{ page.title }}" />
-      {% endif %}
-      {{ content }}
-   </div>
-   <!-- Post info -->
-   <div class="noteinfo">
-      <!-- include some categories and tags maybe? -->
-   </div>
-   <hr>
+
+<!-- Post content -->
+
+<div class="notebody">
+  
+  <div class="post-article-title">
+    <h1>{{ page.title }}</h1>
+  </div>
+  <!-- Featured Image-->
+  {% if page.image %}
+  <img class="featured-image-single" src="{{ page.image }}" alt="{{ page.title }}" /> {% endif %} {{ content }}
 </div>
+<!-- Post info -->
+<div class="noteinfo">
+  <!-- include some categories and tags maybe? -->
+
+
+  <!-- Post category -->
+
+
+  <div class="metabox-k-d">
+    <div class="metabox-d">
+      <i class="fa fa-calendar"></i>{{ page.date | date:"%d.%m.%Y"}}
+    </div>
+
+
+<hr>
+
+
+<!-- Post info-tags  -->
+<div class="margin10 label-tag">
+  {% if page.tags.size > 0 %} Tag{% if page.tags.size > 1 %}s{% endif %}: {{ page.tags | sort | join: " | " }} {% endif %}
+</div>
+
+
+
+
+
+
 <!-- / .note .single -->
 </div>
-<!-- /.notes --
+<!-- /.notes -->
