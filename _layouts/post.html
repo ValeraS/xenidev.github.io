@@ -5,7 +5,6 @@ notes: active
 <div class="notes">
 
 
-      <div class="topbar-single-post">
          <div class="post-article-title">
             <h1>{{ page.title }}</h1>
          </div>
@@ -30,8 +29,7 @@ notes: active
          </div>
       </div>
       {% endfor %} {% endif %}
-   </div>
-</div>
+
 <!-- Post content -->
 <div class="notebody">
    <!-- Featured Image-->
@@ -51,6 +49,10 @@ notes: active
    <div class="margin10 label-tag">
       {% if page.tags.size > 0 %} Tag{% if page.tags.size > 1 %}s{% endif %}: {{ page.tags | sort | join: " | " }} {% endif %}
       </div>
-   <!-- / .note .single -->
+
+</div>
+</div>
+
+
 </div>
 <!-- /.notes -->
