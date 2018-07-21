@@ -373,6 +373,7 @@ cursor: pointer;
   margin-bottom: 10px;
   margin-top: 12px;
   padding-left: 0;
+  float: right;
 }
 
 .square-categories li {
