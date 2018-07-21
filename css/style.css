@@ -220,21 +220,6 @@ pre.prettyprint {
   font-family: 'Montserrat', Helvetica, sans-serif;
 }
 
-/* POST-LIST */
-
-.notelist ul li h1.title a {
-  color: #333333;
-}
-
-.post-list-image {
-  width: 30%;
-  max-width: 100%;
-  min-height: 11rem;
-  background-size: cover;
-  background-position: 50% 50%;
-  float: left;
-  padding-right: 10px;
-}
 
 /* LANGUAGE-SELECTOR */
 
