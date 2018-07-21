@@ -381,6 +381,13 @@ cursor: pointer;
   white-space: nowrap;
 }
 
+.square-categories li>a{
+    display: block;
+    font-family: "Google Sans";
+    text-transform: uppercase;
+    color: rgb(128, 128, 128);
+}
+
 /* Single Post */
 
 .notebody>p {
