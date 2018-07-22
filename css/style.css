@@ -419,7 +419,7 @@ ul.square-categories {
 
 .square-categories li>a{
     display: block;
-    font-family: "Google Sans";
+    font-family: 'Montserrat', Helvetica, sans-serif;
     color: rgb(128, 128, 128);
   text-decoration: none;
   
