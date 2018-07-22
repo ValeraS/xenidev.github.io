@@ -269,11 +269,14 @@ a.en {
 /* POSTS-LIST XENI */
 .welcome_bar {
     margin-bottom: 45px;
-      font-family: "Google Sans";
+    
 }
 
 .welcome_bar p {
   display:inline-block;
+  font-weight: 500;
+    line-height: 24px;
+    letter-spacing: .01em;
 }
 
 .welcome_bar h1 {
