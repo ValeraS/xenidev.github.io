@@ -29,6 +29,14 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-weight: 700;
 }
 
+h2 {
+ font-size: 45px;
+   font-weight: 400;
+   letter-spacing: 0;
+   line-height: 48px;
+
+}
+
 h4 {
  font-size: 24px;
 font-weight: 400;
@@ -41,9 +49,6 @@ h5 {
    font-weight: 500;
    letter-spacing: .005em;
    line-height: 26px;
-
-
-
 }
 
 /* Masthead */
@@ -317,21 +322,17 @@ ul.square-categories {
     letter-spacing: .01em;
 }
 
-.welcome_bar h1 {
+.welcome_bar h2 {
     display: inline-block;
-    font-size: 34px;
-    line-height: 40px;
-    font-weight: 400;
-    letter-spacing: 0;
-     color: #999999;
+      font-family: 'Montserrat', Helvetica, sans-serif;
+
 }
 .welcome_bar i.fa.fa-github {
     font-size: 34px;
     line-height: 40px;
     font-weight: 400;
     letter-spacing: 0;
-    color: var(--md-theme-demo-light-text-accent-on-background-variant,rgba(0,0,0,.54));
-    color: #999999;
+      
 }
 
 
