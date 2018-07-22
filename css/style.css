@@ -379,6 +379,7 @@ span.label-category {
 
 .label-tag {
   color: rgb(128, 128, 128);
+      margin: .5em 0;
 }
 
 
