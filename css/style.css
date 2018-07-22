@@ -267,12 +267,21 @@ a.en {
   display:inline-block;
 }
 
-h1.intro {
-    color: #424242;
-    font: normal normal 400 normal 36px / 44px "Google Sans";
-  float: left;
-  display:block;
-   margin: 0 0 0 0;
+.welcome_bar h1 {
+    display: inline-block;
+    font-size: 34px;
+    line-height: 40px;
+    font-weight: 400;
+    letter-spacing: 0;
+     color: #999999;
+}
+.welcome_bar i.fa.fa-github {
+    font-size: 34px;
+    line-height: 40px;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: var(--md-theme-demo-light-text-accent-on-background-variant,rgba(0,0,0,.54));
+    color: #999999;
 }
 
 
@@ -389,9 +398,13 @@ ul.square-categories {
 .square-categories li>a{
     display: block;
     font-family: "Google Sans";
-    text-transform: uppercase;
     color: rgb(128, 128, 128);
   text-decoration: none;
+  
+ 
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
 }
 
 /* Single Post */
