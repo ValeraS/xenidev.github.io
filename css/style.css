@@ -9,6 +9,10 @@
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAAE0lEQVQIW2N48+bNfxhggLPwcgDQbi+YlZXTEQAAAABJRU5ErkJggg==);
     position: relative;
     min-height: 100vh;
+    
+       letter-spacing: .01em;
+    font-weight: 400;
+    line-height: 20px; 
  
   }
 
