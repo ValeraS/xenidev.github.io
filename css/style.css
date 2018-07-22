@@ -279,6 +279,36 @@ a.en {
     margin-bottom: 45px;
     
 }
+.welcome_bar div {
+    display: inline-block;
+}
+
+ul.square-categories {
+  list-style-type: none;
+  margin-bottom: 10px;
+  margin-top: 12px;
+  padding-left: 0;
+  float: right;
+   display: inline-block;
+}
+
+.square-categories li {
+  display: inline-block;
+  margin-left: 0;
+  white-space: nowrap;
+}
+
+.square-categories li>a{
+    display: block;
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    color: rgb(128, 128, 128);
+  text-decoration: none;
+  
+ 
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
 
 .welcome_bar p {
   display:inline-block;
@@ -403,31 +433,7 @@ cursor: pointer;
 cursor: pointer;
 }
 
-ul.square-categories {
-  list-style-type: none;
-  margin-bottom: 10px;
-  margin-top: 12px;
-  padding-left: 0;
-  float: right;
-}
 
-.square-categories li {
-  display: inline-block;
-  margin-left: 0;
-  white-space: nowrap;
-}
-
-.square-categories li>a{
-    display: block;
-    font-family: 'Montserrat', Helvetica, sans-serif;
-    color: rgb(128, 128, 128);
-  text-decoration: none;
-  
- 
-    font-size: 14px;
-    font-weight: 500;
-    text-transform: uppercase;
-}
 
 /* Single Post */
 
