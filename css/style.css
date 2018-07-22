@@ -36,7 +36,15 @@ font-weight: 400;
 
 }
   
+h5 {
+ font-size: 20px;
+   font-weight: 500;
+   letter-spacing: .005em;
+   line-height: 26px;
 
+
+
+}
 
 /* Masthead */
 
@@ -301,10 +309,11 @@ a.en {
    
     color: #424242;
     margin-bottom: 24px;
-  font-family: "Google Sans";
+ 
   
     box-sizing: border-box;
   text-decoration: none;
+font-family: 'Montserrat', Helvetica, sans-serif;
  
 }
 
