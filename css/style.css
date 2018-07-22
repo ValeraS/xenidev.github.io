@@ -29,6 +29,14 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-weight: 700;
 }
 
+h4 {
+ font-size: 24px;
+font-weight: 400;
+   letter-spacing: 0;
+
+}
+  
+   line-height: 32px;
 
 
 /* Masthead */
@@ -288,9 +296,10 @@ a.en {
 
 
 .media-heading a {
-     font: normal normal 500 normal 24px / 32px "Google Sans";
+   
     color: #424242;
     margin-bottom: 24px;
+  font-family: "Google Sans";
   
     box-sizing: border-box;
   text-decoration: none;
