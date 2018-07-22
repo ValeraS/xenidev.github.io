@@ -9,6 +9,11 @@
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAAE0lEQVQIW2N48+bNfxhggLPwcgDQbi+YlZXTEQAAAABJRU5ErkJggg==);
     position: relative;
     min-height: 100vh;
+    
+    font-weight: 500;
+    line-height: 24px;
+    font-size: 14px;
+    letter-spacing: .01em;
   }
 
 @media only screen and (min-width : 768px) {
@@ -24,10 +29,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-weight: 700;
 }
 
-blockquote p {
-  font-size: 16px;
-  line-height: 1.6em;
-}
+
 
 /* Masthead */
 
