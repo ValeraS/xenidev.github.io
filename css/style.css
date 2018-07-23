@@ -55,6 +55,266 @@ h5 {
    line-height: 26px;
 }
 
+
+
+
+/* POSTS-LIST */
+
+.welcome_bar {
+    margin-bottom: 45px;
+    
+}
+.welcome_bar div {
+    display: inline-block;
+}
+
+ul.square-categories {
+  list-style-type: none;
+  margin-bottom: 10px;
+  margin-top: 12px;
+  padding-left: 0;
+  float: right;
+   display: inline-block;
+}
+
+.square-categories li {
+  display: inline-block;
+  margin-left: 0;
+  white-space: nowrap;
+}
+
+.square-categories li>a{
+    display: block;
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    color: rgb(128, 128, 128);
+  text-decoration: none; 
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.welcome_bar p {
+  display:inline-block;
+  font-weight: 500;
+    line-height: 24px;
+    letter-spacing: .01em;
+}
+
+.welcome_bar h2 {
+    display: inline-block;
+      font-family: 'Montserrat', Helvetica, sans-serif;
+      margin-top: 0;
+
+}
+.welcome_bar i.fa.fa-github {
+    font-size: 34px;
+    line-height: 40px;
+    font-weight: 400;
+    letter-spacing: 0;
+      
+}
+
+
+.media-heading a {
+   
+    color: #424242;
+    margin-bottom: 24px;
+ 
+  
+    box-sizing: border-box;
+  text-decoration: none;
+font-family: 'Montserrat', Helvetica, sans-serif;
+ 
+}
+
+
+span.label-category {
+  color: rgb(255, 255, 255);
+  background-color: rgb(94, 196, 175);
+  white-space: nowrap;
+  text-align: center;
+  box-sizing: border-box;
+  height: auto;
+  float: right;
+  font-size: 90%;
+  transform: translateY(-1px);
+  padding: 5px 7px;
+  border-radius: 5px;
+}
+
+
+.posts-list-image {
+  float: left;
+  height: 6em;
+  width: auto;
+  margin: 8px 30px 16px 0;
+  box-shadow: 0 0 0 1px #ddd;
+}
+
+
+.label-tag {
+  color: rgb(128, 128, 128);
+      margin: .5em 0;
+}
+
+
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.pb-3, .py-3 {
+  padding-bottom: 1rem !important;
+}
+
+.lh-125 {
+  line-height: 1.25;
+}
+
+
+
+
+
+/* Badge-category */
+
+.square-categories span {
+    margin-right: 15px;
+    margin-left: 5px;
+}
+
+.badge-category-medtech {
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+  display: inline-block;
+  color: transparent;
+  background-color: #e9a4a4;
+  border: 1px solid transparent;
+cursor: pointer;
+}
+
+.badge-category-video {
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+  display: inline-block;
+  color: transparent;
+  background-color: #ffe0f2 ;
+  border: 1px solid transparent;
+cursor: pointer;
+}
+
+.badge-category-razrabotka {
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+  display: inline-block;
+  color: transparent;
+  background-color: #b5c5d6 ; 
+  border: 1px solid transparent;
+cursor: pointer;
+}
+
+
+
+/* Single Post */
+
+.notebody>p {
+    line-height: 30px;
+    color: #424242;
+}
+.single-post-title {
+    font-family: Google Sans;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #424242;
+    margin-bottom: 24px;
+    margin-top: -8px;
+}
+.metabox-k-d {
+  align-items: center;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  white-space: nowrap;
+}
+
+.text-category {
+  text-transform: uppercase;
+  color: rgb(128, 128, 128);
+  margin: 0 5px 0 15px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.metabox-d {
+  text-transform: uppercase;
+  color: rgb(128, 128, 128);
+}
+
+
+.metabox-k-single {
+    display: inline-block;
+    float: right;
+    width: 100%;
+    margin-bottom: 30px;
+  font-weight: normal;
+ 
+    font-family: "Google Sans";
+  text-transform: uppercase;
+    color: rgb(128, 128, 128);
+}
+
+*
+
+.metabox-d .fa.fa-calendar {
+  margin: 0 5px 0 0px;
+}
+
+
+.featured-image-single{
+    
+    height: auto;
+    width: 100%;
+    
+  margin: 8px 16px 8px 0;
+  border-radius: 3px;
+  box-shadow: 0 0 0 1px #ddd;
+}
+
+
+/* Single Post Image */
+
+.center-media {
+  margin: 0 auto;
+  display: block;
+}
+
+.page-media {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+/* Single Post Featured Image */
+
+.featured-image {
+  float: left;
+  height: 8em;
+  width: auto;
+  margin: 8px 16px 8px 0;
+  border-radius: 3px;
+  box-shadow: 0 0 0 1px #ddd;
+}
+
+
+
+
+
+
+
 /* Masthead */
 
 .header, .footer, .header h3 {
@@ -282,258 +542,4 @@ a.en {
   display: inline-block;
   background-image: url(languages/languages.png);
 }
-
-/* POSTS-LIST XENI */
-.welcome_bar {
-    margin-bottom: 45px;
-    
-}
-.welcome_bar div {
-    display: inline-block;
-}
-
-ul.square-categories {
-  list-style-type: none;
-  margin-bottom: 10px;
-  margin-top: 12px;
-  padding-left: 0;
-  float: right;
-   display: inline-block;
-}
-
-.square-categories li {
-  display: inline-block;
-  margin-left: 0;
-  white-space: nowrap;
-}
-
-.square-categories li>a{
-    display: block;
-    font-family: 'Montserrat', Helvetica, sans-serif;
-    color: rgb(128, 128, 128);
-  text-decoration: none;
-  
- 
-    font-size: 14px;
-    font-weight: 500;
-    text-transform: uppercase;
-}
-
-.welcome_bar p {
-  display:inline-block;
-  font-weight: 500;
-    line-height: 24px;
-    letter-spacing: .01em;
-}
-
-.welcome_bar h2 {
-    display: inline-block;
-      font-family: 'Montserrat', Helvetica, sans-serif;
-
-}
-.welcome_bar i.fa.fa-github {
-    font-size: 34px;
-    line-height: 40px;
-    font-weight: 400;
-    letter-spacing: 0;
-      
-}
-
-
-.media-heading a {
-   
-    color: #424242;
-    margin-bottom: 24px;
- 
-  
-    box-sizing: border-box;
-  text-decoration: none;
-font-family: 'Montserrat', Helvetica, sans-serif;
- 
-}
-
-
-span.label-category {
-  color: rgb(255, 255, 255);
-  background-color: rgb(94, 196, 175);
-  white-space: nowrap;
-  text-align: center;
-  box-sizing: border-box;
-  height: auto;
-  float: right;
-  font-size: 90%;
-  transform: translateY(-1px);
-  padding: 5px 7px;
-  border-radius: 5px;
-}
-
-
-.posts-list-image {
-  float: left;
-  height: 6em;
-  width: auto;
-  margin: 8px 30px 16px 0;
-  box-shadow: 0 0 0 1px #ddd;
-}
-
-
-.label-tag {
-  color: rgb(128, 128, 128);
-      margin: .5em 0;
-}
-
-
-.border-bottom {
-  border-bottom: 1px solid #e5e5e5;
-}
-
-.pb-3, .py-3 {
-  padding-bottom: 1rem !important;
-}
-
-.lh-125 {
-  line-height: 1.25;
-}
-
-
-
-
-
-/* Badge-category */
-
-.square-categories span {
-    margin-right: 15px;
-    margin-left: 5px;
-}
-
-.badge-category-medtech {
-  width: 10px;
-  height: 10px;
-  margin-right: 5px;
-  display: inline-block;
-  color: transparent;
-  background-color: #e9a4a4;
-  border: 1px solid transparent;
-cursor: pointer;
-}
-
-.badge-category-video {
-  width: 10px;
-  height: 10px;
-  margin-right: 5px;
-  display: inline-block;
-  color: transparent;
-  background-color: #ffe0f2 ;
-  border: 1px solid transparent;
-cursor: pointer;
-}
-
-.badge-category-razrabotka {
-  width: 10px;
-  height: 10px;
-  margin-right: 5px;
-  display: inline-block;
-  color: transparent;
-  background-color: #b5c5d6 ; 
-  border: 1px solid transparent;
-cursor: pointer;
-}
-
-
-
-/* Single Post */
-
-.notebody>p {
-    line-height: 30px;
-    color: #424242;
-}
-.single-post-title {
-    font-family: Google Sans;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 32px;
-    color: #424242;
-    margin-bottom: 24px;
-    margin-top: -8px;
-}
-.metabox-k-d {
-  align-items: center;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -ms-flex-pack: justify;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  white-space: nowrap;
-}
-
-.text-category {
-  text-transform: uppercase;
-  color: rgb(128, 128, 128);
-  margin: 0 5px 0 15px;
-  font-size: 14px;
-  font-weight: 500;
-}
-
-.metabox-d {
-  text-transform: uppercase;
-  color: rgb(128, 128, 128);
-}
-
-
-.metabox-k-single {
-    display: inline-block;
-    float: right;
-    width: 100%;
-    margin-bottom: 30px;
-  font-weight: normal;
- 
-    font-family: "Google Sans";
-  text-transform: uppercase;
-    color: rgb(128, 128, 128);
-}
-
-*
-
-.metabox-d .fa.fa-calendar {
-  margin: 0 5px 0 0px;
-}
-
-
-.featured-image-single{
-    
-    height: auto;
-    width: 100%;
-    
-  margin: 8px 16px 8px 0;
-  border-radius: 3px;
-  box-shadow: 0 0 0 1px #ddd;
-}
-
-
-/* Single Post Image */
-
-.center-media {
-  margin: 0 auto;
-  display: block;
-}
-
-.page-media {
-  margin-bottom: 15px;
-  margin-top: 15px;
-}
-
-/* Single Post Featured Image */
-
-.featured-image {
-  float: left;
-  height: 8em;
-  width: auto;
-  margin: 8px 16px 8px 0;
-  border-radius: 3px;
-  box-shadow: 0 0 0 1px #ddd;
-}
-
-
-
 
