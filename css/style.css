@@ -218,6 +218,18 @@ cursor: pointer;
 
 /* Single Post */
 
+.welcome_bar_single_post h5.media-heading {
+    display: inline-block;
+    margin-top: 0;
+}
+
+.welcome_bar_single_post ul.square-categories {
+
+    margin-top: 0;
+    }
+
+
+
 .notebody>p {
     line-height: 30px;
     color: #424242;
