@@ -16,16 +16,16 @@ notes: active
                {% if page.categories contains 'медтех' %}
                <a href="/notes/medtech.html">{{category}}<span class="badge-category-medtech"></span></a>
             </li>
-            <div>
+            <li>
                {% elsif page.categories contains 'разработка' %}
                <a href="/notes/razrabotka.html">{{category}}<span class="badge-category-razrabotka"></span> </a> 
-            </div>
-            <div>
+            </li>
+            <li>
                {% elsif page.categories contains 'видио' %}
                <a href="/notes/video.html">{{category}}<span class="badge-category-video"></span></a>
-            </div>
+            </li>
             {% endif %}
-         </div>
+        
        </ul>
       {% endfor %} {% endif %}
 
