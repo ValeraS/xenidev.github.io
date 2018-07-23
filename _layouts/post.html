@@ -8,12 +8,14 @@ notes: active
        
             <h1 class="single-post-title">{{ page.title }}</h1>
     
-         <div class="metabox-k-single">
+         <ul class="square-categories">
+    
             {% if page.categories.size > 0 %} {% for category in page.categories %}
-            <div>
+            
+    <li> 
                {% if page.categories contains 'медтех' %}
                <a href="/notes/medtech.html">{{category}}<span class="badge-category-medtech"></span></a>
-            </div>
+            </li>
             <div>
                {% elsif page.categories contains 'разработка' %}
                <a href="/notes/razrabotka.html">{{category}}<span class="badge-category-razrabotka"></span> </a> 
@@ -24,7 +26,7 @@ notes: active
             </div>
             {% endif %}
          </div>
-      </div>
+       </ul>
       {% endfor %} {% endif %}
 
 <!-- Post content -->
