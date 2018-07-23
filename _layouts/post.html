@@ -12,19 +12,15 @@ notes: active
             {% if page.categories.size > 0 %} {% for category in page.categories %}
             <div>
                {% if page.categories contains 'медтех' %}
-               <p> <small class="pull-right">{{category}}</p>
-               <span class="badge-category-medtech"></span></small>
-                <a href="/notes/medtech.html">{{category}}<span class="badge-category-medtech"></span></a>
+               <a href="/notes/medtech.html">{{category}}<span class="badge-category-medtech"></span></a>
             </div>
             <div>
                {% elsif page.categories contains 'разработка' %}
-               <p><small class="pull-right">{{category}}</p>
-               <span class="badge-category-razrabotka"></span></small>
+               <a href="/notes/razrabotka.html">{{category}}<span class="badge-category-razrabotka"></span> </a> 
             </div>
             <div>
                {% elsif page.categories contains 'видио' %}
-               <p><small class="pull-right">{{category}}</p>
-               <span class="badge-category-video"></span></small>
+               <a href="/notes/video.html">{{category}}<span class="badge-category-video"></span></a>
             </div>
             {% endif %}
          </div>
