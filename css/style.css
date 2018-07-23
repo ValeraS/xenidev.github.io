@@ -256,19 +256,6 @@ cursor: pointer;
 }
 
 
-.metabox-k-single {
-    display: inline-block;
-    float: right;
-    width: 100%;
-    margin-bottom: 30px;
-  font-weight: normal;
- 
-    font-family: "Google Sans";
-  text-transform: uppercase;
-    color: rgb(128, 128, 128);
-}
-
-*
 
 .metabox-d .fa.fa-calendar {
   margin: 0 5px 0 0px;
