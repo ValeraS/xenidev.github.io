@@ -296,6 +296,8 @@ cursor: pointer;
 .center-media {
   margin: 0 auto;
   display: block;
+  padding: 10px !important;
+    margin: 40px;
 }
 
 .page-media {
