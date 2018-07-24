@@ -244,7 +244,13 @@ cursor: pointer;
     }
 
 
-
+.image {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 32px;
+}
 
 
 .metabox-k-d {
