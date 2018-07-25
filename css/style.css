@@ -239,11 +239,10 @@ cursor: pointer;
 /* Single Post */
 
 .welcome_bar_single_post h5.media-heading {
-    display: inline-block;
-    margin-top: 0;
-  margin-bottom: 24px;
-    margin-top: -8px;
+    display: inline-block;    
+  margin-bottom: 24px;    
 }
+
 
 .welcome_bar_single_post ul.square-categories {
 
@@ -560,4 +559,25 @@ a.en {
   display: inline-block;
   background-image: url(languages/languages.png);
 }
+
+/* @media query overrides */
+
+
+
+@media only screen and (min-width : 768px) {
+    .welcome_bar_single_post h5.media-heading {
+    display: inline-block;    
+  margin-bottom: 24px; 
+  margin-top: -8px;
+}
+}
+
+
+
+
+
+
+
+
+
 
