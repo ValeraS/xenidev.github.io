@@ -19,22 +19,27 @@ layout: default
 <!-- /.welcome_bar -->
 
 
-
 <div class="notes">
   <div class="container">
     <div class="row">
-      
-      
+
       <div class="container page-content">
-        {% for post in site.posts %} {% if post.categories contains 'медтех' %}
+
+
+        <!-- Posts-list
+  ================================================== -->
+        {% for post in site.posts %}
         <div class="media">
           <div class="media-left media-top">
             {% if post.thumbnail %}
             <img class="posts-list-image rounded" src="{{ post.thumbnail }}" alt="{{ post.title }}" /> {% endif %}
           </div>
           <div class="media-body">
+           {% for category in post.categories %} {% if post.categories contains 'медтех' %}
+            <a href="/notes/medtech.html"><span class="badge-category-medtech pull-right"></span> </a> {% endif %}
 
-            <h5 class="media-heading"><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h5> {{post.excerpt | strip_html | normalize_whitespace | escape | truncatewords: 40 }}
+            {% endfor %} 
+            <h5 class="media-heading"><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h5> {{post.excerpt | strip_html | normalize_whitespace | escape | truncatewords: 20 }}
             <!-- Post info-tags  -->
             <div class="margin10 label-tag">
               {% if post.tags.size > 0 %} Tag{% if post.tags.size > 1 %}s{% endif %}: {{ post.tags | sort | join: " | " }}
@@ -42,9 +47,9 @@ layout: default
               {% endif %}
             </div>
           </div>
-          <hr> {% endif %} {% endfor %}
-
+          <hr> {% endfor %}
         </div>
       </div>
     </div>
   </div>
+  <!-- .notes -->
