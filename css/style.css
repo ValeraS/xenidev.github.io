@@ -103,12 +103,7 @@ ul.square-categories {
     letter-spacing: .01em;
 }
 
-.welcome_bar h2 {
-    display: inline-block;
-      font-family: 'Montserrat', Helvetica, sans-serif;
-      margin-top: 0;
 
-}
 .welcome_bar i.fa.fa-github {
     font-size: 34px;
     line-height: 40px;
@@ -151,7 +146,7 @@ span.label-category {
     width: auto;
     margin: 8px 20px 16px 0;
     border-radius: 0.2rem;
-    height: 78px;
+    height: 48px;
 }
 
   
@@ -572,7 +567,11 @@ a.en {
 }
 }
 
-
+@media only screen and (min-width : 768px) {
+.posts-list-image {
+    height: 78px;
+}
+}
 
 
 
