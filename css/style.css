@@ -575,6 +575,32 @@ a.en {
 
 
 
+/* Typographical */
+
+ figcaption {
+    font-size: 12px;
+    color: #5f6368;
+   margin-top:16px;
+  
+    margin-bottom: 16px;
+   
+   font-weight: 400;
+
+    letter-spacing: 0.24px;
+    line-height: 17px;
+}
+
+
+audio {
+
+    width: 100%;
+  
+}
+
+
+
+
+
 
 
 
