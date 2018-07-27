@@ -14,7 +14,6 @@ layout: feed
     </author>
 
  {% for post in site.posts %}
- {% if post.categories contains 'разработка' %} 
  <entry>
    <title>{{ post.title }}</title>
    <link href="http://xenidev.github.io/notes{{ post.url }}"/>
@@ -22,7 +21,6 @@ layout: feed
    <id>http://xenidev.github.io/notes{{ post.id }}</id>
    <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
- {% endif %} 
  {% endfor %}
  
 </feed>
