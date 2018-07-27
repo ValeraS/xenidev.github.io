@@ -39,8 +39,8 @@ notes: active
             <a href="/notes/medtech.html"><span class="badge-category-medtech pull-right"></span> </a> {% endif %} {% if post.categories contains 'видио' %}
             <a href="/notes/video.html"><span class="badge-category-video pull-right"></span> </a> {% endif %} {% if post.categories contains 'разработка' %}
             <a href="/notes/razrabotka.html"><span class="badge-category-razrabotka pull-right"></span> </a> {% endif %} {% endfor %} {% endif %}
-            <h5 class="media-heading"><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h5> {{post.excerpt | strip_html | normalize_whitespace | escape | truncatewords: 20 }}
-            <!-- Post info-tags  -->
+            <h5 class="media-heading"><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h5> {{post.excerpt | normalize_whitespace | remove: '<br>' | remove: '<p>' | truncatewords: 20 }}
+                        <!-- Post info-tags  -->
             <div class="margin10 label-tag">
               {% if post.tags.size > 0 %} Tag{% if post.tags.size > 1 %}s{% endif %}: {{ post.tags | sort | join: " | " }}
               </p>
