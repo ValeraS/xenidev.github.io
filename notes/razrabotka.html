@@ -36,7 +36,7 @@ layout: default
           </div>
           <div class="media-body">
 
-            <h5 class="media-heading"><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h5> {{post.excerpt | strip_html | normalize_whitespace | escape | truncatewords: 40 }}
+            <h5 class="media-heading"><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h5> {{post.excerpt | normalize_whitespace | remove: '<br>' | remove: '<p>' | remove: '<figcaption>' |  strip_newlines | truncatewords: 20 }}
             <!-- Post info-tags  -->
             <div class="margin10 label-tag">
               {% if post.tags.size > 0 %} Tag{% if post.tags.size > 1 %}s{% endif %}: {{ post.tags | sort | join: " | " }}
