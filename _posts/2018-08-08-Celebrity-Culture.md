@@ -3,8 +3,8 @@ layout: post
 title: Celebrity Culture
 tags: #myamy
 category: 
-thumbnail: "/img/posts/hqdefault.jpg"
-image: "/img/posts/hqdefault.jpg"
+thumbnail: "/img/posts/amy-t.jpg"
+image: "/img/posts/amy.jpg"
 ---
 
 
