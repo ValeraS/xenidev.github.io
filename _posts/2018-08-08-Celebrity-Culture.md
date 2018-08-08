@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Celebrity Culture
-tags: #myamy
+tags: myamy
 category: 
 thumbnail: "/img/posts/amy-t.jpg"
 image: "/img/posts/amy.jpg"
