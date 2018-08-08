@@ -3,6 +3,8 @@ layout: post
 title: Celebrity Culture
 tags: myamy
 category: 
+excerpt: Хотела пост к 23 июля сделать…. Говорят Эми убило три бутылки водки. Я так не думаю. За полгода до ее...
+excerpt: Гематология – наука, изучающая кровь, в медицинских институтах на ней специализируются самые самые. Интересно, но слишком сложно.
 thumbnail: "/img/posts/amy-t.jpg"
 image: "/img/posts/amy.jpg"
 ---
