@@ -12,5 +12,5 @@ gems:
 - jekyll-paginate
 - jekyll-feed
 
-categories: [медтех, разработка, видио]
+categories: [медтех, разработка, видео]
 excerpt_separator: "<!--more-->"
